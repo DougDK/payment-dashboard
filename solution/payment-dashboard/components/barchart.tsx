@@ -29,10 +29,6 @@ const options: ChartOptions<"bar"> = {
     legend: {
       position: "top", // Position of the legend
     },
-    title: {
-      display: true,
-      text: "Monthly Sales Data", // Title of the chart
-    },
   },
   scales: {
     y: {

@@ -75,7 +75,7 @@ export default function Home() {
       datasets: [
         {
           data: Object.values(resultData).map(item => item.transactions),
-        },
+        }
       ],
     });
     setBarData({
@@ -83,7 +83,7 @@ export default function Home() {
       datasets: [
         {
           data: Object.values(resultData).map(item => item.transactions),
-        },
+        }
       ],
     });
     setNumberOfTransactions(orderedFilteredData.length);
@@ -91,8 +91,8 @@ export default function Home() {
 
   return (
     <>
-      <div>Transactions: {numberOfTransactions}</div>
       <DataManager sendOrderedFilteredData={handleData} />
+      <div className="m-[16px]">Transactions: {numberOfTransactions}</div>
       <LineChart data={lineData} />
       <BarChart data={barData} />
     </>
